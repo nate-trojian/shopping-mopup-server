@@ -21,7 +21,8 @@ class ItemList extends Component {
   render() {
     return (
       <>
-        <Accordion defaultActiveKey={(this.props.rootProperty?this.props.propertyName: '')} style={!this.props.rootProperty? ({marginLeft: '50px'}): ({})}>
+        <Accordion defaultActiveKey={(this.props.rootProperty?this.props.propertyName: '')}
+        style={!this.props.rootProperty? ({marginLeft: '25px'}): ({})}>
           <Card className="itemList">
             <Accordion.Toggle
               as={Card.Header}

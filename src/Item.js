@@ -22,10 +22,10 @@ class Item extends Component {
         property={props.property}
         propertyName={props.propertyName}
         rootProperty={props.rootProperty}
-        style={!this.props.rootProperty? ({marginLeft: '50px'}): ({})}
       />
     ) : (
-      <ListGroup.Item className={(this.state.success?"bg-success":"")} style={!this.props.rootProperty? ({marginLeft: '50px'}): ({})}>
+      <ListGroup.Item className={(this.state.success?"bg-success":"")}
+      style={!this.props.rootProperty? ({marginLeft: '25px'}): ({})}>
       {this.props.propertyName}
       <Button
         variant="success"

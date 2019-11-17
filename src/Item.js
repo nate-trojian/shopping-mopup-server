@@ -31,8 +31,7 @@ class Item extends Component {
         variant="success"
         size="lg"
         className="float-right"
-        disabled={this.state.success}
-        enabled={!this.state.success}
+        {...(this.state.success ? {disabled: 1}: {enabled: 1})}
         onClick={this.markSuccess}>
         <span className="glyphicon glyphicon-ok"></span>
       </Button>

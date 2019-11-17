@@ -21,7 +21,7 @@ class ItemList extends Component {
   render() {
     return (
       <>
-        <Accordion defaultActiveKey={(this.props.rootProperty?this.props.propertyName: '')}>
+        <Accordion defaultActiveKey={(this.props.rootProperty?this.props.propertyName: '')} style={!this.props.rootProperty? ({marginLeft: '50px'}): ({})}>
           <Card className="itemList">
             <Accordion.Toggle
               as={Card.Header}
@@ -39,7 +39,7 @@ class ItemList extends Component {
               </Button>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey={this.props.propertyName}>
-              <ListGroup variant="float">
+              <ListGroup>
                 {Object.values(this.props.property).map((property, index, { length }) => (
                   <Item
                     key={index}

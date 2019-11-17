@@ -7,13 +7,21 @@ class App extends Component {
     super()
     this.state = {
       items: {
-        "ApplePie": {
+        "Apple Pie": {
           "Apples": null,
           "Crust": {
             "Milk": null,
             "Flour": null
           },
           "Sugar": null
+        },
+        "Chicken Pot Pie": {
+          "Chicken": null,
+          "Crust": {
+            "Milk": null,
+            "Flour": null
+          },
+          "A Pot": null
         },
       },
     }
